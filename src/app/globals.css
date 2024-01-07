@@ -1,0 +1,70 @@
+:root {
+  --clr-yellow-light: #FFFBEB;
+  --clr-yellow-medium: #FFF3BD;
+  --clr-yellow-dark: #F3D554;
+  --clr-green-light: #B3BD8F;
+  --clr-green-medium: #435500;
+  --clr-green-dark: #293403;
+}
+/*
+  DM Serif Display: --font-dm-serif
+  Inter: --font-inter
+*/
+h1, h2, h3, h4, h5, h6, p, .button, .caption, .data-label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: clamp(44px, 6.5vw ,84px);
+  font-family: var(--font-dm-serif);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: clamp(35.4px, 4.2vw, 54px);
+  font-family: var(--font-dm-serif);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: clamp(32px, 3.3vw, 42px);
+  font-family: var(--font-dm-serif);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: clamp(32px, 3.3vw, 42px);
+  font-family: var(--font-inter)
+}
+
+h5 {
+  font-weight: 400;
+  font-size: clamp(20px, 1.9vw, 24px);
+  font-family: var(--font-dm-serif)
+}
+
+h6 {
+  font-family: var(--font-inter);
+  font-size: clamp(20px, 1.875vw, 24px);
+  
+}
+
+.button {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.caption {
+  font-family: var(--font-inter);
+  font-size: clamp(14px, 1.25vw,16px);
+  font-weight: 600;
+}
+
+.data-label {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: (16px, 1.6vw,20px);
+}
