@@ -6,11 +6,25 @@
   --clr-green-medium: #435500;
   --clr-green-dark: #293403;
 }
+
+html, body {
+  margin: 0;
+}
+
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /*
   DM Serif Display: --font-dm-serif
   Inter: --font-inter
 */
-h1, h2, h3, h4, h5, h6, p, .button, .caption, .data-label {
+* {
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, .caption, .data-label {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -19,6 +33,7 @@ h1 {
   font-weight: 400;
   font-size: clamp(44px, 6.5vw ,84px);
   font-family: var(--font-dm-serif);
+  line-height: 100%;
 }
 
 h2 {
@@ -51,7 +66,13 @@ h6 {
   
 }
 
-.button {
+p {
+  font-weight: 400;
+  font-size: clamp(14px, 1.25vw, 16px);
+  font-family: var(--font-inter);
+}
+
+a {
   font-family: var(--font-inter);
   font-size: 16px;
   font-weight: 700;

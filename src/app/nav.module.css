@@ -1,0 +1,27 @@
+.navLinks {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navbarContent {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    position: absolute;
+    padding: 20px 35px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+.heroSection {
+    background-image: url("/hero_background.png");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    box-sizing: border-box;
+    color: white;
+    background-size: cover;
+    background-position: right;
+}
+
+.heroContent {
+    text-align: left;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.heroText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .heroSection {
+        padding: 20px;
+    }
+
+    .heroContent {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heroText {
+        width: 100%;
+    }
+}
