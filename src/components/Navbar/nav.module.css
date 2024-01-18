@@ -4,7 +4,7 @@
     align-items: baseline;
 }
 
-.navLinks a {
+.navbar a, .navbar a h5 {
     color: white;
     text-decoration: none;
     

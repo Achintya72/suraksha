@@ -24,7 +24,14 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.whatWeDo {
+    width: 100vw;
+    padding: 35px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 420px) {
