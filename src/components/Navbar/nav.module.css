@@ -5,9 +5,8 @@
 }
 
 .navbar a, .navbar a h5 {
-    color: white;
+    color: inherit;
     text-decoration: none;
-    
 }
 
 .navbarContent {
@@ -15,25 +14,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     z-index: 3;
-    padding: 20px 35px;
+    padding: 20px 0px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.navbarScroll {
-    position: absolute;
-    z-index: 3;
-    padding: 20px 35px;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
+.scrolled {
     background-color: white;
     color: black !important;
+    padding: 10px 0px;
+    box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
+}
+.scrolled .navbarContent {
+    color: black !important;
+}
+
+.navbar, .navbar a, .navbar a h5 {
+    transition: all 300ms ease-out;
 }

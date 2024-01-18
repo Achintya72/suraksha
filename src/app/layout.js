@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body  className={`${inter.variable} ${dm_serif.variable}`}>
+      <body className={`${inter.variable} ${dm_serif.variable}`}>
         <Navbar />
         {children}  
       </body>

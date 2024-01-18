@@ -15,7 +15,7 @@ html, body {
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 35px;
+  padding: 0px 35px;
 }
 
 /*
@@ -90,4 +90,9 @@ a {
   font-family: var(--font-inter);
   font-weight: 600;
   font-size: (16px, 1.6vw,20px);
+}
+
+.verticalDivider {
+  width: 1px;
+  background-color: black;
 }
