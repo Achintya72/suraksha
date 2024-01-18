@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={`${styles.navbarContent} layout`}>
-                <Link href="/"k><h5>Suraksha</h5></Link>
+                <Link href="/"><h5>Suraksha</h5></Link>
                 <div className={styles.navLinks}>
                     <Link href="/about-us">About Us</Link>
                     <Link href="/partners">Partners</Link>

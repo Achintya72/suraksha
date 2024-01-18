@@ -1,50 +1,59 @@
 .heroSection {
-    background-image: url("/hero_background.png");
+    position: relative;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
-    padding: 35px;
-    box-sizing: border-box;
-    color: white;
-    background-size: cover;
-    background-position: right;
+    scroll-snap-align: start;
 }
 
-.heroContent {
-    text-align: left;
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
+.heroImg {
+    object-fit: cover;
+    z-index: -1;
     box-sizing: border-box;
+}
+
+.whatWeDo {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.actionCards {
+    display: flex;
+    gap: 20px;
 }
 
 .heroText {
-    width: 50%;
+    color: white;
     display: flex;
+    width: 50%;
     flex-direction: column;
     gap: 25px;
     align-items: flex-start;
 }
 
-.whatWeDo {
-    width: 100vw;
-    padding: 35px;
-    box-sizing: border-box;
+.snapScrollContainer {
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+    margin: 0;
+    height: 100vh
 }
+
 
 @media screen and (max-width: 420px) {
     .heroSection {
         padding: 20px;
     }
 
-    .heroContent {
-        justify-content: center;
+    .heroText {
+        width: 100%;
+        align-items: center;
         text-align: center;
     }
 
-    .heroText {
-        width: 100%;
+    .actionCards {
+        overflow-x: scroll;
     }
 }

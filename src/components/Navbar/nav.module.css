@@ -20,8 +20,20 @@
 
 .navbar {
     position: absolute;
+    z-index: 3;
     padding: 20px 35px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.navbarScroll {
+    position: absolute;
+    z-index: 3;
+    padding: 20px 35px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    color: black !important;
 }

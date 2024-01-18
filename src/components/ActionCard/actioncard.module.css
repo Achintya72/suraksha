@@ -1,0 +1,28 @@
+.card {
+    aspect-ratio: 2/3;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.card h3{
+    line-height: 100%;
+}
+
+.card .caption {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cardContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;   
+}
+
+.bgImg {
+    z-index: -1;
+    object-fit: cover;
+}
