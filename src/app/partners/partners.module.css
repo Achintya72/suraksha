@@ -1,0 +1,47 @@
+.partnersMain {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnersMain img {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mainContent {
+    color: white;
+    text-align: center;
+}
+
+.vision {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.impact  {
+    background-color: var(--clr-yellow-medium);
+}
+
+
+.dataPoint {
+    color: var(--clr-green-medium);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.reason{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

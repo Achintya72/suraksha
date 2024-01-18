@@ -3,7 +3,7 @@ import Icon from "../Icon";
 import styles from "./actioncard.module.css";
 import Image from "next/image";
 
-function ActionCard({ title, icon, number, caption, image, alt="Picture of an animal" }) {
+function ActionCard({ title, icon, number, desc, caption, image, alt="Picture of an animal" }) {
     return (
         <div className={styles.card}>
             <Image src={image} fill className={styles.bgImg} alt={alt}/>
@@ -14,6 +14,10 @@ function ActionCard({ title, icon, number, caption, image, alt="Picture of an an
                     <h4>{number}</h4>
                     <p className={classNames("caption", styles.caption)}>{caption}</p>
                 </div>
+            </div>
+            <div className={styles.overlay}>
+                <h5>{title}</h5>
+                <p>{desc}</p>
             </div>
         </div>
     )

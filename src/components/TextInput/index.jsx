@@ -1,10 +1,8 @@
 import styles from "./input.module.css";
 
-function Input({ 
-    placeholder = "Name"
-}) {
+function Input(props) {
     return (
-        <input placeholder={placeholder} className={styles.input}/>
+        <input {...props} className={styles.input}/>
     )
 }
 

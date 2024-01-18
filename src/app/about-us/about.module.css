@@ -1,0 +1,77 @@
+.aboutMain {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMain img {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mainContent {
+    color: white;
+    text-align: center;
+}
+
+.vision {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+.reason{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vision h2 {
+    flex: 2;
+    text-align: center;
+    margin: auto 0;
+}
+.reason h6 {
+    color: var(--clr-green-dark);
+}
+
+.goalCards {
+    display: flex;
+    gap: 40px;
+}
+
+.donate {
+    position: relative;
+}
+
+.donateBg {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    height: calc(100% + 3rem);
+    top: -3rem;
+    background-color: var(--clr-green-light);
+}
+
+.donateContent {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    display: flex;
+    gap: 40px;
+}
+
+.donateText {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}

@@ -1,0 +1,33 @@
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/3;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    box-shadow: 8px 0px 32px rgba(0,0,0,0.25);
+}
+
+.card img {
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-yellow-medium);
+}
+
+.text {
+    color: white;
+}
+
+.dataLabel {
+    color: white;
+}

@@ -3,6 +3,7 @@ import './globals.css'
 import Link from 'next/link';
 import Button from '@/components/Button';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'], weight:['400', '700', '600'], variable: "--font-inter" });
 const dm_serif = DM_Serif_Display({ subsets: ['latin'], weight:"400", variable: "--font-dm-serif"});
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} ${dm_serif.variable}`}>
         <Navbar />
         {children}  
+        <Footer />
       </body>
     </html>
   )

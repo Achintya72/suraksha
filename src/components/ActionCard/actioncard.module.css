@@ -5,6 +5,8 @@
     padding: 15px;
     box-sizing: border-box;
     box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
+    overflow: hidden;
+    cursor: grab;
 }
 
 .card h3{
@@ -27,4 +29,25 @@
 .bgImg {
     z-index: -1;
     object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    backdrop-filter: blur(100px );
+    top: 100%;
+    left: 0;
+    transition: all 300ms ease-in-out;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card:hover .overlay{
+    top: 0;
 }
