@@ -4,6 +4,8 @@ import classNames from "@/hooks/classnames";
 import GoalCard from "@/components/GoalCard";
 import Button from "@/components/Button";
 import DonationForm from "@/components/DonationForm";
+import Accomplishment from "@/components/Accomplishment";
+import Accomplishments from "@/components/Accomplishments";
 
 export default function AboutUs() {
     return (
@@ -27,6 +29,7 @@ export default function AboutUs() {
                     <p>A home where their body parts, despite being objects of human value, are theirs to use and have, instead of being targets on their backs, where their deaths don&apos;t fill someone&apos;s pockets.</p>
                 </div>
             </section>
+            <Accomplishments />
             <section className={classNames("layout", styles.goals)} id="ourGoals">
                 <h2>Our Goals</h2>
                 <div className={styles.goalCards}>

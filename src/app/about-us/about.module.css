@@ -42,6 +42,10 @@
 .reason h6 {
     color: var(--clr-green-dark);
 }
+.goals h2 {
+    margin: 4rem 0rem;
+}
+
 
 .goalCards {
     display: flex;
@@ -62,8 +66,8 @@
 }
 
 .donateContent {
-    padding-top: 3rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
     display: flex;
     gap: 40px;
 }
@@ -74,4 +78,27 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
+}
+
+
+.accomplishments {
+    height: 300vh;
+    position: relative;
+    background-color: var(--clr-yellow-medium);
+}
+
+.accomplishments h2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.allAccs {
+    display: flex;
+}
+
+.accContent {
+    height: 100vh;
+    position: sticky;
+    overflow-x: hidden;
+    top: 60px;
 }
