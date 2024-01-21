@@ -19,10 +19,12 @@
 .primary:hover {
     background-color: var(--clr-green-medium);
     color: var(--clr-yellow-medium) !important;
+    cursor: pointer;
 }
 
 .secondary:hover {
     background-color: var(--clr-yellow-medium);
+    cursor: pointer;
     color: var(--clr-green-medium) !important;
 }
 

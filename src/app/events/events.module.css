@@ -1,0 +1,94 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main img {
+    object-fit: cover;
+    z-index: -3;
+}
+
+.mainText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+.vision {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+.reason{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vision h2 {
+    flex: 2;
+    text-align: center;
+    margin: auto 0;
+    line-height: 100%;
+}
+.reason h6 {
+    color: var(--clr-green-dark);
+}
+
+.galaInfo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--clr-yellow-medium);
+}
+
+.galaPic {
+    height: 100vh;
+    flex: 1;
+    position: relative;
+}
+
+.galaPic img {
+    object-fit: cover;
+}
+
+.galaText {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px
+}
+.galaText h2{
+    line-height: 100%;
+}
+
+.location {
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.galaText * {
+
+    max-width: calc(720px);
+}
+/*
+Image In Center = 1440px - (100vh * 2 / 3) + (2160px - 50vw)
+
+*/

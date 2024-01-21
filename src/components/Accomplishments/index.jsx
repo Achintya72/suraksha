@@ -19,19 +19,19 @@ export default function Accomplishments() {
                     <motion.div style={{ x }}className={styles.allAccs}>
                         <Accomplishment 
                             alt="cafe" 
-                            img="/accomplishments1.jpg" 
+                            img="/about/accomplishments1.jpg" 
                             title="Lorem Ipsum" 
                             desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
                         />
                         <Accomplishment 
                             alt="cafe" 
-                            img="/accomplishments1.jpg" 
+                            img="/about/accomplishments1.jpg" 
                             title="Lorem Ipsum" 
                             desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
                         />
                         <Accomplishment 
                             alt="cafe" 
-                            img="/accomplishments1.jpg" 
+                            img="/about/accomplishments1.jpg" 
                             title="Lorem Ipsum" 
                             desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
                         />

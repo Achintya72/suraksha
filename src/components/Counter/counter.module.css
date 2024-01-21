@@ -1,0 +1,25 @@
+.counter {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button p {
+    user-select: none;
+}
+.counterRoot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}

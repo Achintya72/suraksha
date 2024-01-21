@@ -11,7 +11,7 @@ export default function AboutUs() {
     return (
         <>
             <section className={styles.aboutMain}>
-                <Image src="/about_bg.jpg" fill alt="Two wild elephants roughhousing"/>
+                <Image src="/about/about_bg.jpg" fill alt="Two wild elephants roughhousing"/>
                 <div className={classNames("layout", styles.mainContent)}>
                     <h4>Our Philosphy</h4>
                     <h1>Animals don&apos;t have to earn the right to be saved, they are born with it.</h1>
@@ -39,7 +39,7 @@ export default function AboutUs() {
                         date="By 2030"
                         icon="tiger"
                         desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
-                        image="/wolf.jpg"
+                        image="/about/wolf.jpg"
                         stat="20%"
                         title="Endangered Species Populations"
                     />
@@ -49,7 +49,7 @@ export default function AboutUs() {
                         date="By 2030"
                         icon="tiger"
                         desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
-                        image="/courthouse.jpg"
+                        image="/about/courthouse.jpg"
                         stat="20%"
                         title="Endangered Species Populations"
                     />
@@ -59,7 +59,7 @@ export default function AboutUs() {
                         date="By 2030"
                         icon="tiger"
                         desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
-                        image="/landscape.jpg"
+                        image="/about/landscape.jpg"
                         stat="20%"
                         title="Endangered Species Populations"
                     />

@@ -1,12 +1,22 @@
 import styles from "./partners.module.css";
 import Image from "next/image";
 import classNames from "@/hooks/classnames";
+import GoalCard from "@/components/GoalCard";
+import Button from "@/components/Button";
+import Icon from "@/components/Icon";
+
+const partners = [
+    'nike', 'adidas', 'microsoft', 'google', 'apple', 'ibm',
+    'uniqlo', 'mcdonalds', 'logitech', 'twitch', 'boeing', 'pepsi',
+    'cocacola', 'paypal', 'stripe', 'tiktok'
+];
+
 
 export default function Partners() {
     return (
         <>
             <section className={styles.partnersMain}>
-                <Image src="/partner_bg.jpg" fill alt="Two wild elephants roughhousing"/>
+                <Image src="/partner/partner_bg.jpg" fill alt="Two wild elephants roughhousing"/>
                 <div className={classNames("layout", styles.mainContent)}>
                     <h4>Our Partners</h4>
                     <h1>Join the network of organizations that have supported our work and growth.</h1>
@@ -32,6 +42,55 @@ export default function Partners() {
                             </div>
                         </div>
                         <p>A home where their body parts, despite being objects of human value, are theirs to use and have, instead of being targets on their backs, where their deaths don&apos;t fill someone&apos;s pockets.</p>
+                    </div>
+                </div>
+            </section>
+            <section className={classNames("layout", styles.highlights)} id="highlights">
+                <h2>Partner Highlights</h2>
+                <div className={styles.highlightsRow}>
+                    <GoalCard 
+                        alt="Kid reading book" 
+                        desc="Lorem ipsum dolor sit amet consectetur. Pretium sociis sit id nulla nibh ut porttitor in." 
+                        date="In 2023"
+                        caption="Books Sold"
+                        icon="penguin"
+                        image="/partner/book.jpg"
+                        stat="75.3k"
+                        title="Our Neighbors Campaign"
+                    />
+                    <GoalCard 
+                        alt="Cheetah-patterned shoes"
+                        caption="Shoes Sold"
+                        date="In 2023"
+                        desc="Lorem ipsum dolor sit amet consectetur. Pretium sociis sit id nulla nibh ut porttitor in."
+                        icon="nike"
+                        image="/partner/shoes.jpg"
+                        stat="100k"
+                        title="Limited Addition Animal Shoes"
+                    />
+                    <GoalCard 
+                        alt="Cheetah-patterned shoes"
+                        caption="Shoes Sold"
+                        date="In 2023"
+                        desc="Lorem ipsum dolor sit amet consectetur. Pretium sociis sit id nulla nibh ut porttitor in."
+                        icon="nike"
+                        image="/partner/shoes.jpg"
+                        stat="100k"
+                        title="Limited Addition Animal Shoes"
+                    />
+                </div>
+            </section>
+            <section className={styles.partnerContainer} id="newsletter">
+                <div className={styles.partnerBg} />
+                <div className={classNames(styles.partners, "layout")}>
+                    <div className={styles.partnerText}>
+                        <h2>And We&apos;re Not Done.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Elit cras aliquet tincidunt sed. Laoreet volutpat ullamcorper duis ullamcorper vel.</p>
+                        <Button>Get Involved</Button>
+                    </div>
+                    <div className="verticalDivider" />
+                    <div className={styles.partnersIcons}>
+                        {partners.map(p => <Icon size={25} name={p} key={p} />)}
                     </div>
                 </div>
             </section>

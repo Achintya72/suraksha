@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <section className={styles.heroSection}>
-                <Image src="/hero_background.png" alt="Deer in the wild" fill className={styles.heroImg} />
+                <Image src="/home/hero_background.png" alt="Deer in the wild" fill className={styles.heroImg} />
                 <div className="layout">
                     <div className={styles.heroText}>
                         <h1>Protecting Our Neighbors</h1>
@@ -32,28 +32,28 @@ export default function Home() {
                     number="65,000+"
                     desc="Hello, world!" 
                     caption="Animals Saved" 
-                    image="/tiger.jpg"
+                    image="/home/tiger.jpg"
                     />
                   <ActionCard 
                     title="Habitat Conservation" 
                     icon="trees" 
                     number="40,000" 
                     caption="Acres Preserved" 
-                    image="/giraffe.jpg"
+                    image="/home/giraffe.jpg"
                     />
                   <ActionCard 
                     title="Wildlife Restoration" 
                     icon="restore" 
                     number="78" 
                     caption="Captive Breeding Programs" 
-                    image="/condor.jpg"
+                    image="/home/condor.jpg"
                     />
                   <ActionCard 
                     title="Wildlife Protection" 
                     icon="plants" 
                     number="65,000+" 
                     caption="Trees Planted" 
-                    image="/personHoldingPlant.jpg"
+                    image="/home/personHoldingPlant.jpg"
                     />
                 </div>
             </section>
@@ -63,19 +63,19 @@ export default function Home() {
                     <NewsCard 
                         alt="Open Pit after a mining operation" 
                         desc="Learn how and where mining has caused mass habitat loss and death, and what you can do to stop it." 
-                        image="/mining.jpg" 
+                        image="/home/mining.jpg" 
                         title="Digging Graves: Mining and the 6th Mass Extinction"
                     />
                     <NewsCard 
                         alt="Open Pit after a mining operation" 
                         desc="Learn how and where mining has caused mass habitat loss and death, and what you can do to stop it." 
-                        image="/mining.jpg" 
+                        image="/home/mining.jpg" 
                         title="Digging Graves: Mining and the 6th Mass Extinction"
                     />
                     <NewsCard 
                         alt="Open Pit after a mining operation" 
                         desc="Learn how and where mining has caused mass habitat loss and death, and what you can do to stop it." 
-                        image="/mining.jpg" 
+                        image="/home/mining.jpg" 
                         title="Digging Graves: Mining and the 6th Mass Extinction"
                     />
                 </div>
