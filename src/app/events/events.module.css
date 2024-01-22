@@ -88,6 +88,15 @@
 
     max-width: calc(720px);
 }
+
+.upcoming h2 {
+    padding: 4rem 0rem;
+}
+
+.events {
+    display: flex;
+    gap: 40px;
+}
 /*
 Image In Center = 1440px - (100vh * 2 / 3) + (2160px - 50vw)
 

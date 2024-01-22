@@ -1,0 +1,37 @@
+.partners {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.partnerContainer {
+    position: relative;
+}
+.partnerBg {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 3rem);
+    background-color: var(--clr-green-light);
+    z-index: -5;
+    top: -3rem;
+}
+
+.partnerText, .partnersIcons {
+    flex: 1;
+}
+
+.partnerText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.partnersIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 35px;
+    align-content: flex-start;
+}

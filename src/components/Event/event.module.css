@@ -1,0 +1,34 @@
+.card {
+    flex: 1;
+    box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
+}
+
+.image {
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.image img {
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.quickInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.quickInfo .location {
+    color: red;
+    display: flex;
+    gap: 5px;
+}

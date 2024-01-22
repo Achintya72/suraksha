@@ -4,6 +4,8 @@ import classNames from "@/hooks/classnames";
 import Icon from "@/components/Icon";
 import Button from "@/components/Button";
 import Counter from "@/components/Counter";
+import Event from "@/components/Event";
+import PartnersPrompt from "@/components/Partners";
 
 export default function Events() {
     return (
@@ -48,6 +50,36 @@ export default function Events() {
                     <Button>Register</Button>
                 </div>
             </section>
+            <section className={classNames(styles.upcoming, "layout")}>
+                <h2>Upcoming Events</h2>
+                <div className={styles.events}>
+                    <Event 
+                        alt="Gala Event"
+                        date="1/10 - 1/17"
+                        desc="Join us at our annual Surakaha gala event, where we reflect on this year's successes and next year's hopes."
+                        image="/events/gala.jpg"
+                        location="Albuquerque, NM"
+                        title="Annual Suraksha Gala: Registration Information"
+                    />
+                    <Event 
+                        alt="PROTEST"
+                        date="11/17 - 11/24"
+                        desc="Join us at Washington D.C., as we take to the streets to argue for provisions for more national nature reserves."
+                        image="/events/protest.jpg"
+                        location="Seattle, WA"
+                        title="March Animal Rights Protest: Get Involved"
+                    />
+                    <Event 
+                        alt="PROTEST"
+                        date="11/17 - 11/24"
+                        desc="Join us at Washington D.C., as we take to the streets to argue for provisions for more national nature reserves."
+                        image="/events/protest.jpg"
+                        location="Seattle, WA"
+                        title="March Animal Rights Protest: Get Involved"
+                    />
+                </div>
+            </section>
+            <PartnersPrompt />
         </>
     )
 }

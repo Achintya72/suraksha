@@ -4,12 +4,8 @@ import classNames from "@/hooks/classnames";
 import GoalCard from "@/components/GoalCard";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
+import PartnersPrompt from "@/components/Partners";
 
-const partners = [
-    'nike', 'adidas', 'microsoft', 'google', 'apple', 'ibm',
-    'uniqlo', 'mcdonalds', 'logitech', 'twitch', 'boeing', 'pepsi',
-    'cocacola', 'paypal', 'stripe', 'tiktok'
-];
 
 
 export default function Partners() {
@@ -80,20 +76,7 @@ export default function Partners() {
                     />
                 </div>
             </section>
-            <section className={styles.partnerContainer} id="newsletter">
-                <div className={styles.partnerBg} />
-                <div className={classNames(styles.partners, "layout")}>
-                    <div className={styles.partnerText}>
-                        <h2>And We&apos;re Not Done.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Elit cras aliquet tincidunt sed. Laoreet volutpat ullamcorper duis ullamcorper vel.</p>
-                        <Button>Get Involved</Button>
-                    </div>
-                    <div className="verticalDivider" />
-                    <div className={styles.partnersIcons}>
-                        {partners.map(p => <Icon size={25} name={p} key={p} />)}
-                    </div>
-                </div>
-            </section>
+            <PartnersPrompt />
         </>
     )
 }
