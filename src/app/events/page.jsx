@@ -6,12 +6,15 @@ import Button from "@/components/Button";
 import Counter from "@/components/Counter";
 import Event from "@/components/Event";
 import PartnersPrompt from "@/components/Partners";
+import useDarkImage from "@/hooks/darkenImage";
 
 export default function Events() {
+    const darken = useDarkImage();
+
     return (
         <>
             <section className={styles.main}>
-                <Image src="/events/events_bg.jpg" alt="deer" fill />
+                <Image src="/events/events_bg.jpg" alt="deer" fill style={darken}/>
                 <div className={classNames(styles.mainText, "layout")}>
                     <h4>Our Events</h4>
                     <h1>The best way to get involved is to get involved.</h1>

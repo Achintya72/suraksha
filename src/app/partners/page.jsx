@@ -5,14 +5,17 @@ import GoalCard from "@/components/GoalCard";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
 import PartnersPrompt from "@/components/Partners";
+import useDarkImage from "@/hooks/darkenImage";
 
 
 
 export default function Partners() {
+    const darken = useDarkImage();
+
     return (
         <>
             <section className={styles.partnersMain}>
-                <Image src="/partner/partner_bg.jpg" fill alt="Two wild elephants roughhousing"/>
+                <Image src="/partner/partner_bg.jpg" style={darken} fill alt="Two wild elephants roughhousing"/>
                 <div className={classNames("layout", styles.mainContent)}>
                     <h4>Our Partners</h4>
                     <h1>Join the network of organizations that have supported our work and growth.</h1>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./goalcard.module.css";
 import Icon from "../Icon";
 import classNames from "@/hooks/classnames";
+import useDarkImage from "@/hooks/darkenImage";
 
 export default function GoalCard({
     image,
@@ -13,9 +14,10 @@ export default function GoalCard({
     title,
     desc
 }) {
+    const darken = useDarkImage();
     return(
         <div className={styles.card}>
-            <Image src={image} fill alt={alt} />
+            <Image src={image} style={darken} fill alt={alt} />
             <div className={styles.content}>
                 <div className={styles.stats}>
                     <div>
