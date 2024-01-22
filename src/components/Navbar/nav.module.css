@@ -3,6 +3,11 @@
     gap: 40px;
     align-items: baseline;
 }
+.hide {
+    max-height: 0px !important;
+    overflow: hidden;
+}
+
 
 .navbar a, .navbar a h5 {
     color: inherit;
@@ -14,13 +19,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 35px;
 }
 
 .navbar {
     position: fixed;
     top: 0;
     z-index: 3;
-    padding: 20px 0px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -29,13 +34,30 @@
 .scrolled {
     background-color: white;
     color: black !important;
-    padding: 10px 0px;
     box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
 }
 .scrolled .navbarContent {
     color: black !important;
+    padding: 10px 35px;
 }
 
-.navbar, .navbar a, .navbar a h5 {
-    transition: all 300ms ease-out;
+.navbar * {
+    transition: all 300ms ease-out; 
+}
+
+.galaPopup {
+    background-color: var(--clr-yellow-medium);
+    max-height: 300px;
+    transition: all 300ms ease-in-out;
+}
+
+.galaText {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    align-items: center;
+}
+
+.galaText svg:hover {
+    cursor: pointer;
 }
