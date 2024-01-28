@@ -1,0 +1,58 @@
+.checkoutMain {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutMain img {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.checkoutContent {
+    color: white;
+    text-align: center;
+}
+
+.checkoutDetails h2 {
+    margin: 2rem 0rem;
+}
+
+.sideBySide h2 {
+    margin: 2rem 0rem;
+}
+
+.checkoutDetails .sideBySide {
+    display: flex;
+    margin: 2rem 0rem;
+    gap: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    gap: 10px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input1 {
+    flex: 1;
+}
+
+.input2 {
+    flex: 2;
+}
+
+.border {
+    border: 1px solid black;
+}

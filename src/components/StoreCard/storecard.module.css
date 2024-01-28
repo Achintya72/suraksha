@@ -1,0 +1,25 @@
+.card {
+    background-color: white;
+    box-shadow: 8px 0px 8px 0px rgba(0,0,0,0.25);
+    max-width: 380px;
+}
+
+.imageContainer {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16/9;
+    background-color: var(--clr-yellow-light);
+}
+
+.imageContainer img {
+    object-fit: contain;
+}
+
+.cardContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}

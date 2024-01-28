@@ -29,6 +29,9 @@ export default function Navbar() {
                     <Link href="/store">Store</Link>
                     <Link href="/blog">Blog</Link>
                     <Link href="/donate">Donate</Link>
+                    <Link href="/checkout">
+                        <Icon name="add" size={20}/>
+                    </Link>
                     <Button type={scrollPosition > 20 ? "primary" : "secondary"}>Support Us</Button>
                 </div>
             </div>
