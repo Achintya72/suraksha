@@ -7,9 +7,11 @@ import classNames from "../../hooks/classnames";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import Icon from "../Icon";
 import { useState } from "react";
+import useRedirectFunction from "@/hooks/useRedirectFunction";
 
 export default function Navbar() {
     const [sawGala, changeGala] = useState(true);
+    const donateRedirect = useRedirectFunction("/donate")
 
     const scrollPosition = useScrollPosition();
     return (

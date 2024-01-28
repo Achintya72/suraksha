@@ -1,8 +1,8 @@
 import styles from "./button.module.css"
 
-function Button({ type="primary", children }) {
+function Button({ type="primary", children, ...props }) {
     return (
-        <div className={type == "primary" ? styles.primary : styles.secondary}>
+        <div {...props} className={type == "primary" ? styles.primary : styles.secondary}>
             <a>{children}</a>
         </div>
     )
