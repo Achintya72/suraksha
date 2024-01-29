@@ -1,14 +1,20 @@
 .card {
     background-color: white;
-    box-shadow: 8px 0px 8px 0px rgba(0,0,0,0.25);
-    max-width: 380px;
+    min-width: 250px;
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--clr-yellow-medium);
 }
 
 .imageContainer {
-    width: 100%;
     position: relative;
+    box-sizing: border-box ;
     aspect-ratio: 16/9;
-    background-color: var(--clr-yellow-light);
 }
 
 .imageContainer img {
@@ -16,10 +22,10 @@
 }
 
 .cardContent {
-    padding: 20px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: row;
     gap: 15px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }

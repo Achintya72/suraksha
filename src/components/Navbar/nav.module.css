@@ -1,7 +1,7 @@
 .navLinks {
     display: flex;
     gap: 40px;
-    align-items: baseline;
+    align-items: center;
 }
 .hide {
     max-height: 0px !important;
@@ -60,4 +60,24 @@
 
 .galaText svg:hover {
     cursor: pointer;
+}
+
+.items {
+    position: absolute;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    z-index: 5;
+    border-radius: 9px;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: var(--clr-yellow-medium);
+    color: black !important;
+
 }

@@ -44,8 +44,7 @@ export default function Footer() {
                 <div className={styles.supportUs}>
                     <h6>Support Us</h6>
                     <Link href='/donate#whyDonate'>Why Donate?</Link>
-                    <Link href='/donate#individual'>Individual</Link>
-                    <Link href='/donate#corporate'>Corporate</Link>
+                    <Link href='/donate#directDonations'>Individual</Link>
                     <Link href='/donate#adoptAnAnimal'>Adopt-An-Animal</Link>
                     <Link href='/donate#store'>Store</Link>
                 </div>

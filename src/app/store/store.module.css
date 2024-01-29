@@ -24,19 +24,19 @@
 
 .itemGrid {
     display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 35px;
     row-gap: 15px;
 }
 
 @media screen and (max-width: 800px) {
     .itemGrid {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media screen and (max-width: 540px) {
     .itemGrid {
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }

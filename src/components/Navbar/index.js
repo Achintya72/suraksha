@@ -6,13 +6,15 @@ import styles from "./nav.module.css";
 import classNames from "../../hooks/classnames";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import Icon from "../Icon";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import useRedirectFunction from "@/hooks/useRedirectFunction";
+import StoreContext from "../StoreContext";
 
 export default function Navbar() {
     const [sawGala, changeGala] = useState(true);
+    const { getTotalItems } = useContext(StoreContext);
     const donateRedirect = useRedirectFunction("/donate")
-
+    const cartItems = getTotalItems();
     const scrollPosition = useScrollPosition();
     return (
         <nav className={classNames(styles.navbar, scrollPosition > 20 ? styles.scrolled : styles.top)}>
@@ -30,11 +32,11 @@ export default function Navbar() {
                     <Link href="/events">Events</Link>
                     <Link href="/store">Store</Link>
                     <Link href="/blog">Blog</Link>
-                    <Link href="/donate">Donate</Link>
-                    <Link href="/checkout">
+                    <Link href="/checkout" style={{ position: "relative", height: "20px", width: "20px"}}>
                         <Icon name="add" size={20}/>
+                        <p className={styles.items}>{cartItems > 9 ? "9+" : cartItems}</p>
                     </Link>
-                    <Button type={scrollPosition > 20 ? "primary" : "secondary"}>Support Us</Button>
+                    <Button type={scrollPosition > 20 ? "primary" : "secondary"} onClick={donateRedirect}>Support Us</Button>
                 </div>
             </div>
         </nav>

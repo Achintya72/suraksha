@@ -89,7 +89,7 @@ a {
 .data-label {
   font-family: var(--font-inter);
   font-weight: 600;
-  font-size: (16px, 1.6vw,20px);
+  font-size: clamp(16px, 1.6vw,20px);
 }
 
 .verticalDivider {

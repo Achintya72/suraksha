@@ -1,5 +1,20 @@
-.primary, .secondary {
+.regular {
     padding: 10px 20px;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.iconOnly {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+}
+
+.iconOnly svg {
+    width: 20px;
+    height: 20px;
 }
 
 .primary {
