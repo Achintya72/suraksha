@@ -2,9 +2,12 @@
   --clr-yellow-light: #FFFBEB;
   --clr-yellow-medium: #FFF3BD;
   --clr-yellow-dark: #F3D554;
+  --clr-yellow-darkest: #987E0B; 
+  --clr-green-lightest: #E9ECDF;
   --clr-green-light: #B3BD8F;
   --clr-green-medium: #435500;
   --clr-green-dark: #293403;
+  --clr-grey-1: #E6E6E6;
 }
 
 html, body {
