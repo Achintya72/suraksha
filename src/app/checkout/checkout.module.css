@@ -33,12 +33,14 @@
 .nameInfo {
     display: flex;
     gap: 20px;
+    width: 100%
 }
 
 .basicInfo {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: flex-start;
 }
 
 
@@ -50,5 +52,66 @@
     padding: 20px;
     box-shadow: 8px 0px 32px rgba(0,0,0,0.25);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+}
+
+.tabSelect {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: var(--clr-yellow-medium);
+}
+
+.tabSelect a {
+    padding: 10px 20px;
+    flex: 1;
+    text-align: center;
+    z-index: 1;
+}
+
+.tabSelect a, .currentBg {
+    transition: all 300ms ease-out;
+}
+
+.currentBg {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    z-index: 0;
+    background-color: var(--clr-yellow-darkest);
+}
+
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left {
+    left: 0;
+}
+
+.center {
+    left: 33%;
+}
+
+.right {
+    left: 67%;
+}
+
+.current {
+    color: white;
+}
+
+.basicInfo h6 {
+    color: rgba(0,0,0,0.7);
 }
