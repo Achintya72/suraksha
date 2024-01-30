@@ -8,6 +8,7 @@
   --clr-green-medium: #435500;
   --clr-green-dark: #293403;
   --clr-grey-1: #E6E6E6;
+  --clr-grey-3: #656565;
 }
 
 html, body {
@@ -33,6 +34,11 @@ h1, h2, h3, h4, h5, h6, p, a, .caption, .data-label {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+h1, h2, h3, h4 {
+  line-height: 100%;
+}
+
 
 h1 {
   font-weight: 400;
