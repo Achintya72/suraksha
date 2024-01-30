@@ -1,0 +1,32 @@
+.checkbox {
+    outline: 1px solid black;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    color: white;
+    transition: all 100ms ease-out;
+}
+
+.bg {
+    position: absolute;
+    background-color: var(--clr-green-medium);
+    inset: 2px;
+    border-radius: 3px;
+    z-index: 0;
+    transform: scale(0);
+    transition: all 100ms ease-out;
+}
+.checked {
+    transform: scale(1);
+}
+.checkbox svg {
+    z-index: 1;
+}
+
+.checkedRoot {
+    outline: 2px solid var(--clr-green-light);
+}
