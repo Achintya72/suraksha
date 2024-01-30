@@ -7,11 +7,28 @@ import Link from 'next/link';
 import ProgramCard from "@/components/ProgramCards";
 import Icon from "@/components/Icon";
 import { useState } from "react";
+import Checkbox from "@/components/Checkbox";
+import Button from "@/components/Button";
+import AnimalCard from "@/components/AnimalCard";
 
 let tabStyles = [styles.left, styles.right];
 
 export default function Donate() {
     const [type, changeType] = useState(0);
+    const [custom, changeCustom] = useState("");
+    const [monthy, changeMonthly] = useState(false);
+
+    const customInput = (e) => {
+        let value = e.target.value;
+        if (value == "$") changeCustom("");
+        else {
+            if (e.target.value.length > 0 && value[0] != "$") {
+                value = `\$${value}`;
+            }
+            changeCustom(value);
+        }
+    }
+
 
     return (
         <>
@@ -84,15 +101,72 @@ export default function Donate() {
                                 <a className={styles.donationAmount} >${(15 * (1 + type * 99)).toLocaleString('en-us')}</a>
                                 <a className={styles.donationAmount} >${(20 * (1 + type * 99)).toLocaleString('en-us')}</a>
                             </div>
-                            <input />
+                            <input value={custom} placeholder="Custom Amount" onChange={customInput} />
                         </div>
+                        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+                            <Checkbox onChange={changeMonthly} />
+                            <p>Make Monthly</p>
+                        </div>
+                        <Button>Donate</Button>
                     </div>
                     <div className={styles.data}>
                         <h2>The difference you are making</h2>
+                        <div className={styles.stats}>
+                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
+                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
+                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
+                        </div>
                     </div>
+                </div>
+            </section>
+            <section id="adoptAnAnimal" className={classNames("layout", styles.adoptAnAnimal)}>
+                <div className={styles.header}>
+                    <h2>Adopt An Animal</h2>
+                    <p className="caption">Get exclusive monthly updates, a plushie, photos, stamps, and greetings cards of your pet.</p>
+                </div>
+                <div style={{ display: "flex", paddingTop: "32px", paddingBottom: "32px", gap: "35px", overflowX: "auto", overflowY: "visible"}}>
+                    <AnimalCard
+                        age={16}
+                        bio="Loves to eat, sleep, play, repeat."
+                        image="/donate/milo.jpg"
+                        location="Amboseli National Park, KY"
+                        name="Milo"
+                    />
+                    <AnimalCard
+                        age={23}
+                        bio="Loves to show off and eat."
+                        image="/donate/bambi.jpg"
+                        location="California, USA"
+                        name="Bambi"
+                    />
+                    <AnimalCard
+                        age={21}
+                        bio="Loves to roll in mud and sleep."
+                        image="/donate/roger.jpg"
+                        location="KwaZulu-Natal, SA"
+                        name="Roger"
+                    />
+                    <AnimalCard
+                        age={9}
+                        bio="Loves to swim, sleep, and play."
+                        image="/donate/emily.jpg"
+                        location="Madhya Pradesh, IN"
+                        name="Emily"
+                    />
                 </div>
             </section>
         </>
     )
 }
 
+const DonationStat = ({ desc, value, label }) => {
+    return (
+        <div className={styles.stat}>
+            <div className={styles.statData}>
+                <h4>{value}</h4>
+                <p className="data-label">{label}</p>
+            </div>
+            <p>{desc}</p>
+        </div>
+    )
+}

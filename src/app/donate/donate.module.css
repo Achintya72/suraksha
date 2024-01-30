@@ -59,6 +59,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     box-shadow: 8px 0px 32px rgba(0,0,0,0.25);
 }
@@ -143,6 +144,7 @@
 .donationForm {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
 
 }
@@ -150,6 +152,7 @@
 .donationForm input {
     outline: 3px solid var(--clr-green-lightest);
     padding: 10px 20px;
+    flex: 1;
     outline-offset: -3px;
     font-family: var(--font-inter);
     font-size: 16px;
@@ -157,11 +160,13 @@
     color: var(--clr-green-medium);
     background-color: var(--clr-green-lightest);
     transition: all 300ms ease-out;
+    position: relative;
 }
 
 .donationForm input:focus {
     outline: 3px solid var(--clr-green-light)
 }
+
 
 .defaults {
     display: flex;
@@ -173,4 +178,45 @@
     padding: 10px 20px;
     background-color: var(--clr-green-lightest);
     color: var(--clr-green-medium);
+}
+
+.statData {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    color: var(--clr-green-medium);
+}
+.stat {
+    max-width: 200px;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 4rem;
+}
+
+.header h2 {
+    line-height: 100%;
+}
+
+.header p {
+    color: var(--clr-grey-3);
+}
+
+.adoptAnAnimal {
+    padding-top: 2rem;
+    box-sizing: border-box;
 }
