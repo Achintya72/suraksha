@@ -186,5 +186,11 @@
         fill="currentColor" />
 
     </symbol>
+
+    <symbol id="check" viewBox="0 0 24 24">
+      <path
+        d="M9.00004 20.42L2.79004 14.21L5.62004 11.38L9.00004 14.77L18.88 4.88L21.71 7.71L9.00004 20.42Z"
+        fill="currentColor" />
+    </symbol>
   </defs>
 </svg>
