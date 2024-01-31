@@ -7,6 +7,8 @@ import Counter from "@/components/Counter";
 import Event from "@/components/Event";
 import PartnersPrompt from "@/components/Partners";
 import useDarkImage from "@/hooks/darkenImage";
+import EventCounter from "./_eventCounter";
+import Toast from "@/components/Toast";
 
 export default function Events() {
     const darken = useDarkImage();
@@ -45,12 +47,16 @@ export default function Events() {
                         <h2>Annual Suraksha Gala</h2>
                     </div>
                     <p className="caption">1/10/2023 - 1/17/2024</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Malesuada magna pretium augue ut. In sollicitudin lacus est ac ipsum nulla nec egestas aliquam. Libero laoreet dolor egestas felis consectetur habitasse. Nisi posuere pellentesque venenatis nec pretium porta. Libero ac bibendum ut volutpat laoreet in. Fermentum enim suscipit donec consequat. Arcu.</p>
-                    <div style={{ display: "flex", gap: "25px", marginBottom: "15px"}}>
-                        <Counter label="Adults" />
-                        <Counter label="Children" />
-                    </div>
-                    <Button>Register</Button>
+                    <p>Our annual gala is a heartfelt celebration dedicated to honoring the tireless 
+                        accomplishments and achievements of Suraksha throughout the past year. It&apos;s 
+                        an evening filled with gratitude, where supporters, volunteers, and partners
+                         come together to reflect on our collective efforts in preserving habitats, 
+                         protecting endangered species, and fostering environmental stewardship. 
+                         Through shared stories and a spirit of camaraderie, we reaffirm and celebrate 
+                         our commitment to safeguarding our planet&apos;s precious wildlife for generations to come.
+                    </p>
+                    <EventCounter />
+                    
                 </div>
             </section>
             <section className={classNames(styles.upcoming, "layout")}>
@@ -83,6 +89,7 @@ export default function Events() {
                 </div>
             </section>
             <PartnersPrompt />
+            <Toast message="Hello!"/>
         </>
     )
 }

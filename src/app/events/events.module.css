@@ -97,7 +97,9 @@
     display: flex;
     gap: 40px;
 }
-/*
-Image In Center = 1440px - (100vh * 2 / 3) + (2160px - 50vw)
 
-*/
+.ticketCounters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
