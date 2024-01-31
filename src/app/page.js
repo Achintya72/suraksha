@@ -5,6 +5,7 @@ import ActionCard from "@/components/ActionCard";
 import classNames from "@/hooks/classnames";
 import NewsCard from "@/components/NewsCard";
 import Input from "@/components/TextInput";
+import NewsLetter from "@/components/Newsletter";
 
 export default function Home() {
     return (
@@ -80,24 +81,7 @@ export default function Home() {
                     />
                 </div>
             </section>
-            <section className={styles.newsletterContainer} id="newsletter">
-                <div className={styles.newsletterBg} />
-                <div className={classNames(styles.newsletter, "layout")}>
-                    <div className={styles.newsletterText}>
-                        <h2>Stay Updated.</h2>
-                        <p>Sign up for our monthly newsletter, with information about Suraksha campaigns and upcoming events. We do not spam you, or send promotional emails.</p>
-                    </div>
-                    <div className="verticalDivider" />
-                    <div className={styles.newsletterForm}>
-                        <div className={styles.nameInputs}>
-                            <Input name="fname" placeholder="First Name" />
-                            <Input name="lname" placeholder="Last Name"/>
-                        </div>
-                        <Input name="email" placeholder="Email"/>
-                        <Button>Join Newsletter</Button>
-                    </div>
-                </div>
-            </section>
+            <NewsLetter />
         </>
     );
 }
