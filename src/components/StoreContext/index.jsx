@@ -56,6 +56,10 @@ const StoreContextProvider = ({ children }) => {
         return Math.round(count * 100) / 100;
     }
 
+    const clearCart = () => {
+        changeItems({});
+    }
+
     const data = {
         addItem,
         getItemName,
@@ -63,7 +67,8 @@ const StoreContextProvider = ({ children }) => {
         getTotalItems,
         items,
         changeItems,
-        getTotalCost
+        getTotalCost,
+        clearCart
     }
 
     return (
