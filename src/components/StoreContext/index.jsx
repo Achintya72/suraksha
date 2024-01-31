@@ -22,7 +22,12 @@ const StoreContextProvider = ({ children }) => {
         let item = items[itemName] ?? { quantity: quantity, price: price };
         item.quantity -= quantity;
         changeItems(prev => {
-            prev[itemName] = item;
+            if (item.quantity == 0) {
+                delete prev[itemName];
+            }
+            else {
+                prev[itemName] = item;
+            }
             return { ...prev };
         })
     }
@@ -38,6 +43,8 @@ const StoreContextProvider = ({ children }) => {
     const getItemName = (itemId) => {
         if (itemId == "donation") return "Donation";
         if (plushies.includes(itemId)) return "Suraksha " + itemId[0].toUpperCase() + itemId.slice(1) + " Plushie";
+        if (itemId == "galaAdult") return "Suraksha Gala Adult Ticket";
+        if (itemId == "galaChild") return "Suraksha Gala Child Ticket";
         else return itemId[0].toUpperCase() + itemId.slice(1) + " Adoption";
     }
 
@@ -50,11 +57,11 @@ const StoreContextProvider = ({ children }) => {
     }
 
     const data = {
-        addItem, 
+        addItem,
         getItemName,
-        removeItem, 
-        getTotalItems, 
-        items, 
+        removeItem,
+        getTotalItems,
+        items,
         changeItems,
         getTotalCost
     }
