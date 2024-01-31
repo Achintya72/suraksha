@@ -71,7 +71,7 @@ export default function AboutUs() {
                     <div className={styles.donateText}>
                         <h2>We Need Your Help.</h2>
                         <p>
-                        Lorem ipsum dolor sit amet consectetur. Est montes elementum augue morbi a dignissim sodales. Gravida hac lorem in facilisis et cras et purus in. Volutpat consequat vivamus risus est viverra ultricies aenean est turpis.
+                        As a non-profit organization, we rely on the support and collaboration of individuals like you to drive meaningful impact. Your contributions, whether through volunteering, donations, or spreading awareness, are crucial in fulfilling our mission of creating positive change for our environment.
                         </p>
                         <Button>Support Us</Button>
                     </div>
