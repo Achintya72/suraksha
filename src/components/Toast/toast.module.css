@@ -1,0 +1,44 @@
+@keyframes slidein {
+    from {
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+
+    to {
+        bottom: 2rem;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+
+
+
+.toast {
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    bottom: 2rem;
+    align-items: center;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 8px 0px 32px rgba(0, 0, 0, 0.25);
+    animation-name: slidein, slidein;
+    animation-duration: 500ms, 500ms;
+    animation-timing-function: ease-out, ease-out;
+    animation-delay: 0ms, 4500ms;
+    animation-direction: normal, reverse;
+}
+
+
+.success {
+    background-color: var(--clr-success);
+}
+
+.error {
+    background-color: var(--clr-error);
+}
