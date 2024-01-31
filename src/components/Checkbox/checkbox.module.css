@@ -25,8 +25,16 @@
 }
 .checkbox svg {
     z-index: 1;
+    opacity: 0;
+    transition: all 100ms ease-out;
 }
 
+
+
 .checkedRoot {
-    outline: 2px solid var(--clr-green-light);
+    outline: 2px solid var(--clr-green-medium);
+}
+
+.checkedRoot svg {
+    opacity: 1;
 }

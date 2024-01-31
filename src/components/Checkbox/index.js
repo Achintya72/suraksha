@@ -15,8 +15,8 @@ export default function Checkbox({ onChange })  {
         onChange(checked);
     }
     return (
-        <div className={classNames(styles.checkbox, checked  && styles.checkedRoot)} onClick={handleClick}>
-            <div className={classNames(styles.bg, checked && styles.checked)} />
+        <div className={classNames(styles.checkbox, checked ? styles.checkedRoot: false)} onClick={handleClick}>
+            <div className={classNames(styles.bg, checked ? styles.checked: false)} />
             <Icon name="check" size={12} />
         </div>
     )
