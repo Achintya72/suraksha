@@ -10,6 +10,7 @@ import { useState } from "react";
 import Checkbox from "@/components/Checkbox";
 import Button from "@/components/Button";
 import AnimalCard from "@/components/AnimalCard";
+import DonationForm from "@/components/DonationForm";
 
 let tabStyles = [styles.left, styles.right];
 
@@ -89,25 +90,7 @@ export default function Donate() {
                 <div className={classNames("layout", styles.difference)}>
                     <div className={styles.donate}>
                         <h6>Step 2: Choose an Amount</h6>
-                        <div className={styles.tabSelect}>
-                            <div className={classNames(styles.tabBg, tabStyles[type])} />
-                            <a className={classNames(styles.tab, type == 0 && styles.active)} onClick={() => changeType(0)}>Individual</a>
-                            <a className={classNames(styles.tab, type == 1 && styles.active)} onClick={() => changeType(1)}>Corporate</a>
-                        </div>
-                        <div className={styles.donationForm}>
-                            <div className={styles.defaults}>
-                                <a className={styles.donationAmount} >${(5 * (1 + type * 99)).toLocaleString('en-us')}</a>
-                                <a className={styles.donationAmount}>  ${(10 * (1 + type * 99)).toLocaleString('en-us')}</a>
-                                <a className={styles.donationAmount} >${(15 * (1 + type * 99)).toLocaleString('en-us')}</a>
-                                <a className={styles.donationAmount} >${(20 * (1 + type * 99)).toLocaleString('en-us')}</a>
-                            </div>
-                            <input value={custom} placeholder="Custom Amount" onChange={customInput} />
-                        </div>
-                        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                            <Checkbox onChange={changeMonthly} />
-                            <p>Make Monthly</p>
-                        </div>
-                        <Button>Donate</Button>
+                        <DonationForm />
                     </div>
                     <div className={styles.data}>
                         <h2>The difference you are making</h2>
