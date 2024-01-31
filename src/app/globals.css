@@ -9,6 +9,8 @@
   --clr-green-dark: #293403;
   --clr-grey-1: #E6E6E6;
   --clr-grey-3: #656565;
+  --clr-success: #48BB78;
+  --clr-error: #F56565;
 }
 
 html, body {
