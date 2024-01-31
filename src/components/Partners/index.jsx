@@ -17,7 +17,7 @@ export default function PartnersPrompt() {
                 <div className={classNames(styles.partners, "layout")}>
                     <div className={styles.partnerText}>
                         <h2>And We&apos;re Not Done.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Elit cras aliquet tincidunt sed. Laoreet volutpat ullamcorper duis ullamcorper vel.</p>
+                        <p>Partner companies play a critical role in advancing our mission by providing vital support and resources. With your collaboration, we can amplify our impact, expand outreach efforts, and reach a broader audience to drive meaningful change in wildlife conservation and preservation.</p>
                         <Button>Get Involved</Button>
                     </div>
                     <div className="verticalDivider" />
