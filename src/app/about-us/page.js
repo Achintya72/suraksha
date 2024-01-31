@@ -11,7 +11,7 @@ export default function AboutUs() {
     return (
         <>
             <section className={styles.aboutMain}>
-                <Image src="/about/about_bg.jpg" fill alt="Two wild elephants roughhousing"/>
+                <Image src="/about/about_bg.jpg" fill alt="Two wild elephants roughhousing" />
                 <div className={classNames("layout", styles.mainContent)}>
                     <h4>Our Philosphy</h4>
                     <h1>Animals don&apos;t have to earn the right to be saved, they are born with it.</h1>
@@ -33,7 +33,7 @@ export default function AboutUs() {
             <section className={classNames("layout", styles.goals)} id="ourGoals">
                 <h2>Our Goals</h2>
                 <div className={styles.goalCards}>
-                    <GoalCard 
+                    <GoalCard
                         alt="Wolf"
                         caption="Avg. Increase"
                         date="By 2030"
@@ -43,7 +43,7 @@ export default function AboutUs() {
                         stat="20%"
                         title="Endangered Species Populations"
                     />
-                    <GoalCard 
+                    <GoalCard
                         alt="Wolf"
                         caption="Avg. Increase"
                         date="By 2030"
@@ -53,7 +53,7 @@ export default function AboutUs() {
                         stat="20%"
                         title="Endangered Species Populations"
                     />
-                    <GoalCard 
+                    <GoalCard
                         alt="Wolf"
                         caption="Avg. Increase"
                         date="By 2030"
@@ -63,7 +63,7 @@ export default function AboutUs() {
                         stat="20%"
                         title="Endangered Species Populations"
                     />
-                </div>    
+                </div>
             </section>
             <section className={styles.donate}>
                 <div className={styles.donateBg} />
@@ -71,12 +71,14 @@ export default function AboutUs() {
                     <div className={styles.donateText}>
                         <h2>We Need Your Help.</h2>
                         <p>
-                        As a non-profit organization, we rely on the support and collaboration of individuals like you to drive meaningful impact. Your contributions, whether through volunteering, donations, or spreading awareness, are crucial in fulfilling our mission of creating positive change for our environment.
+                            As a non-profit organization, we rely on the support and collaboration of individuals like you to drive meaningful impact. Your contributions, whether through volunteering, donations, or spreading awareness, are crucial in fulfilling our mission of creating positive change for our environment.
                         </p>
                         <Button>Support Us</Button>
                     </div>
                     <div className="verticalDivider" />
-                    <DonationForm />
+                    <div className={styles.form}>
+                        <DonationForm bg="white"/>
+                    </div>
                 </div>
             </section>
         </>
