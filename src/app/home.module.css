@@ -5,12 +5,12 @@
     display: flex;
     align-items: center;
     scroll-snap-align: start;
+    box-sizing: border-box;
 }
 
 .heroImg {
     object-fit: cover;
     z-index: -1;
-    box-sizing: border-box;
 }
 
 .whatWeDo {
@@ -34,6 +34,7 @@
 .newsCards {
     display: flex;
     gap: 40px;
+    overflow-x: scroll;
 }
 
 .heroText {
