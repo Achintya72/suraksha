@@ -14,7 +14,6 @@
 }
 
 .whatWeDo {
-    max-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     scroll-snap-align: start;
@@ -26,8 +25,10 @@
 
 .actionCards {
     margin-top: 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .newsCards {
@@ -51,6 +52,18 @@
     height: 100vh
 }
 
+@media screen and (max-width: 900px) {
+    .actionCards {
+        grid-template-columns: auto auto;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .actionCards {
+        grid-template-columns: auto;
+    }
+}
 
 @media screen and (max-width: 420px) {
     .heroSection {
@@ -61,10 +74,6 @@
         width: 100%;
         align-items: center;
         text-align: center;
-    }
-
-    .actionCards {
-        overflow-x: scroll;
     }
 }
 
