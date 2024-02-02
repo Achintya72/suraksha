@@ -25,7 +25,7 @@
 .itemGrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 35px;
+    column-gap: var(--margin);
     row-gap: 15px;
 }
 

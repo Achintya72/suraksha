@@ -11,17 +11,19 @@
   --clr-grey-3: #656565;
   --clr-success: #48BB78;
   --clr-error: #F56565;
+  --margin: clamp(20px, 2.4vw,35px);
 }
 
 html, body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .layout {
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0px 35px;
+  padding: 0px var(--margin);
 }
 
 /*

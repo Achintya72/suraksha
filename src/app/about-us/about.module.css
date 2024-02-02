@@ -21,7 +21,7 @@
 .vision {
     display: flex;
     align-items: stretch;
-    gap: 40px;
+    gap: var(--margin);
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -34,22 +34,24 @@
     justify-content: center;
 }
 
+.reason h6 {
+    color: var(--clr-green-medium);
+}
+
 .vision h2 {
     flex: 2;
     text-align: center;
     margin: auto 0;
 }
-.reason h6 {
-    color: var(--clr-green-dark);
-}
 .goals h2 {
-    margin: 4rem 0rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 
 .goalCards {
     display: flex;
-    gap: 40px;
+    gap: var(--margin);
 }
 
 .donate {
@@ -69,7 +71,7 @@
     padding-top: 4rem;
     padding-bottom: 5rem;
     display: flex;
-    gap: 40px;
+    gap: var(--margin);
 }
 
 .donateText {
@@ -109,4 +111,19 @@
     align-items: flex-start;
     gap: 10px;
     flex: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    .vision {
+        flex-direction: column;
+    }
+
+    .reason {
+        text-align: center;
+    }
+
+    .donateContent {
+        flex-direction: column;
+    }
 }

@@ -62,36 +62,38 @@ export default function Checkout() {
                         </div>
                         <h6>Order Summary</h6>
                         {total != 0 ?
+                        <>
                             <div className={styles.orderItems}>
                                 {
                                     Object.keys(items).map(key => (
-                                        <div key={key} className={styles.orderItem}>
+                                        <>
                                             <p className="caption">{getItemName(key)}</p>
                                             <Counter type="tinted" val={items[key].quantity} onChange={(v) => {
                                                 stage != 2 && removeItem(key, items[key].quantity - v, items[key].price);
                                             }} />
-                                            <p>${Math.round(items[key].price * items[key].quantity * 100) / 100}</p>
-                                        </div>
+                                            <p style={{textAlign: "right"}}>${Math.round(items[key].price * items[key].quantity * 100) / 100}</p>
+                                        </>
                                     ))
                                 }
-                                <hr style={{ width: "100%" }} />
-                                <div className={styles.orderItem}>
-                                    <p className='caption'>Subtotal</p>
-                                    <p>${Math.round(total * 100) / 100}</p>
-                                </div>
-                                <div className={styles.orderItem}>
-                                    <p className="caption">Tax</p>
-                                    <p>${Math.round((total / 10) * 100) / 100}</p>
-                                </div>
-                                <div className={styles.orderItem}>
-                                    <p className="caption">Shipping</p>
-                                    <p>$3.00</p>
-                                </div>
-                                <div className={styles.orderItem}>
-                                    <p className="caption">Total</p>
-                                    <p>${Math.round((total * 1.1 + 3) * 100) / 100}</p>
-                                </div>
                             </div>
+                            <hr style={{ width: "100%" }} />
+                            <div className={styles.orderItem}>
+                                <p className='caption'>Subtotal</p>
+                                <p>${Math.round(total * 100) / 100}</p>
+                            </div>
+                            <div className={styles.orderItem}>
+                                <p className="caption">Tax</p>
+                                <p>${Math.round((total / 10) * 100) / 100}</p>
+                            </div>
+                            <div className={styles.orderItem}>
+                                <p className="caption">Shipping</p>
+                                <p>$3.00</p>
+                            </div>
+                            <div className={styles.orderItem}>
+                                <p className="caption">Total</p>
+                                <p>${Math.round((total * 1.1 + 3) * 100) / 100}</p>
+                            </div>
+                        </>
                         :
                         <p>Cart is Empty</p>}
                     </div>
@@ -181,7 +183,7 @@ const BillingInfo = ({ back, next }) => {
                 <Input name="expiration" placeholder="Exp. Date" onChange={handleChange} value={info.expiration} />
                 <Input name="cvv" placeholder="CVV" onChange={handleChange} value={info.cvv} />
             </div>
-            <div className={styles.nameInfo}>
+            <div className={styles.navigators}>
                 <Button onClick={back}>Back</Button>
                 <Button onClick={handleSubmit}>Next</Button>
             </div>
