@@ -6,6 +6,7 @@ import classNames from "@/hooks/classnames";
 import NewsCard from "@/components/NewsCard";
 import Input from "@/components/TextInput";
 import NewsLetter from "@/components/Newsletter";
+import { Carousel } from "@/components/Carousel";
 
 export default function Home() {
     return (
@@ -26,7 +27,7 @@ export default function Home() {
             </section>
             <section className={`${styles.whatWeDo} layout`} id="whatWeDo">
                 <h2>What We Do</h2>
-                <div className={styles.actionCards}>
+                <Carousel>
                   <ActionCard 
                     title="Wildlife Protection" 
                     icon="elephant" 
@@ -56,7 +57,7 @@ export default function Home() {
                     caption="Trees Planted" 
                     image="/home/personHoldingPlant.jpg"
                     />
-                </div>
+                </Carousel>
             </section>
             <section className={classNames(styles.news, "layout")} id="latestNews">
                 <h2>Latest News</h2>
