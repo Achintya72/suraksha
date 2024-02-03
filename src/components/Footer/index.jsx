@@ -51,6 +51,7 @@ export default function Footer() {
             </div>
             <div className="layout">
                 <p className={styles.copyright}>© 2023-2027 Suraksha. All Rights Reserved</p>
+                <Link href="/sources">Sources</Link>
             </div>
         </footer>
     )
