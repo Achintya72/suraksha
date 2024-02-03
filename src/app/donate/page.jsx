@@ -92,7 +92,7 @@ export default function Donate() {
                     />
                 </Carousel>
             </section>
-            <section className={styles.differenceContainer}>
+            <section className={styles.differenceContainer} id="donationForm">
                 <div className={styles.background} />
                 <div className={classNames("layout", styles.difference)}>
                     <div className={styles.donate}>
