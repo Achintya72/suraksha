@@ -8,6 +8,7 @@
     cursor: pointer;
     min-width: 250px;
     flex: 1;
+    
 }
 
 .card h3{
@@ -49,6 +50,11 @@
     gap: 10px;
 }
 
-.card:hover .overlay{
+.card:focus {
+    border: none;
+    outline: none;
+}
+
+.card:hover .overlay, .card:focus .overlay{
     top: 0;
 }

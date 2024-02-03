@@ -30,7 +30,16 @@
     flex: 1;
     transition: all 300ms ease-out;
     z-index: 1;
+    background: none;
     color: var(--clr-green-medium);
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.tab:hover, .tab:focus {
+    border: none;
+    outline: 1px solid var(--clr-green-medium)
 }
 
 .tabBg {
@@ -94,6 +103,13 @@
     padding: 10px 20px;
     color: var(--clr-green-medium);
     transition: all 300ms ease-out;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.donationAmount:focus, .donationAmount:hover {
+    outline: 1px solid var(--clr-green-medium)
 }
 
 

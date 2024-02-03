@@ -35,9 +35,9 @@ function Button({ type="primary", selectable = false, selectText = "", iconOnly=
     const colorStyle = colorStyles[type][selectable ? (sel ? "selected": "unselected") : "noSelect"];
     
     return (
-        <div onClick={handleClick} {...props} className={classNames(colorStyle, iconOnly ? styles.iconOnly: styles.regular)}>
+        <button onClick={handleClick} {...props} className={classNames(colorStyle, iconOnly ? styles.iconOnly: styles.regular)}>
             {selectable ? (sel ? selectText: children):children}
-        </div>
+        </button>
     )
 }
 

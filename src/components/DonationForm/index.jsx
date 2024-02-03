@@ -65,8 +65,8 @@ export default function DonationForm({ bg = "white" }) {
             <>
                 <div className={classNames(styles.tabSelect, bg == "white" ? styles.whiteBg : undefined)}>
                     <div className={classNames(styles.tabBg, tabStyles[type])} />
-                    <a className={classNames(styles.tab, type == 0 ? styles.active : undefined)} onClick={() => changeType(0)}>Individual</a>
-                    <a className={classNames(styles.tab, type == 1 ? styles.active : undefined)} onClick={() => changeType(1)}>Corporate</a>
+                    <button tabIndex={0} className={classNames(styles.tab, type == 0 ? styles.active : undefined)} onClick={() => changeType(0)}><a>Individual</a></button>
+                    <button tabIndex={0} className={classNames(styles.tab, type == 1 ? styles.active : undefined)} onClick={() => changeType(1)}><a>Corporate </a></button>
                 </div>
                 <div className={styles.donationForm}>
                     <div className={styles.defaults}>
@@ -99,8 +99,8 @@ export default function DonationForm({ bg = "white" }) {
 const Amount = ({ curr, value, onClick }) => {
 
     return (
-        <a onClick={() => {
+        <button tabIndex={0} onClick={() => {
             onClick(value);
-        }} className={classNames(styles.donationAmount, value == curr ? styles.chosen : undefined)}>${value.toLocaleString('en-us')}</a>
+        }} className={classNames(styles.donationAmount, value == curr ? styles.chosen : undefined)}><a>${value.toLocaleString('en-us')}</a></button>
     )
 }
