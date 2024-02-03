@@ -1,9 +1,16 @@
 .newsletter {
     display: flex;
     align-items: stretch;
-    gap: 40px;
+    gap: var(--margin);
     padding-top: 4rem;
     padding-bottom: 5rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .newsletter {
+        flex-direction: column;
+    }
 }
 
 .newsletterContainer {
@@ -39,4 +46,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+}
+@media screen and (max-width: 400px) {
+    .nameInputs {
+        flex-direction: column;
+    }
 }

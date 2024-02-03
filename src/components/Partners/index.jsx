@@ -12,7 +12,7 @@ const partners = [
 
 export default function PartnersPrompt() {
     return (
-        <section className={styles.partnerContainer} id="partners">
+        <section className={styles.partnerContainer} id="partnerWithUs">
                 <div className={styles.partnerBg} />
                 <div className={classNames(styles.partners, "layout")}>
                     <div className={styles.partnerText}>

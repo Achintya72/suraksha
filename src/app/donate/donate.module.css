@@ -30,7 +30,7 @@
 .programs {
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: var(--margin);
 }
 
 .differenceContainer {
@@ -40,17 +40,17 @@
 .background {
     position: absolute;
     width: 100%;
-    height: calc(100% + 3rem);
+    height: calc(100% + 5rem);
     background-color: var(--clr-green-light);
     z-index: -5;
-    top: -3rem;
+    top: -5rem;
 }
 
 .difference {
     display: flex;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
-    gap: 35px;
+    gap: var(--margin);
 }
 
 .donate {
@@ -67,7 +67,7 @@
 .vision {
     display: flex;
     align-items: stretch;
-    gap: 40px;
+    gap: var(--margin);
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -219,4 +219,37 @@
 .adoptAnAnimal {
     padding-top: 2rem;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .difference {
+        flex-direction: column;
+    }
+
+    .data {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    .stat {
+        max-width: unset;
+    }
 }

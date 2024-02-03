@@ -1,6 +1,6 @@
-export default function useDarkImage() {
+export default function useDarkImage(percent = "70%") {
     const styles = {
-        filter: "brightness(70%)"
+        filter: `brightness(${percent})`
     };
     return styles;
 }

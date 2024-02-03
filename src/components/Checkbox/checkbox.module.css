@@ -9,8 +9,13 @@
     position: relative;
     color: white;
     transition: all 100ms ease-out;
+    background: none;
+    box-shadow: none;
+    border:none;
 }
-
+.checkbox:focus {
+    border: 1px solid var(--clr-green-medium);
+}
 .bg {
     position: absolute;
     background-color: var(--clr-green-medium);

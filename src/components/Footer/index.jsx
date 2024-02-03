@@ -39,7 +39,7 @@ export default function Footer() {
                     <Link href='/events#whyWeDoEvents'>Why We Do Events</Link>
                     <Link href='/events#annualGala'>Annual Gala</Link>
                     <Link href='/events#upcomingEvents'>Upcoming Events</Link>
-                    <Link href='/events#hostAnEvent'>Host an Event</Link>
+                    <Link href='/events#partnerWithUs'>Host an Event</Link>
                 </div>
                 <div className={styles.supportUs}>
                     <h6>Support Us</h6>

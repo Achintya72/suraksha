@@ -6,6 +6,7 @@
     padding: 20px;
     display: flex;
     box-shadow: 8px 0px 32px rgba(0,0,0,0.25);
+    min-width: 260px;
 }
 
 .card img {
@@ -30,4 +31,10 @@
 
 .dataLabel {
     color: white;
+}
+
+
+.icon {
+    width: clamp(50px, 7vw, 70px);
+    height: clamp(50px, 7vw, 70px);
 }
