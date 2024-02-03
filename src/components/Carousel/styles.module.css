@@ -5,6 +5,7 @@
     overflow-x: hidden;
     padding: 32px 0px;
     box-sizing: border-box;
+    cursor: grab;
 }
 
 
