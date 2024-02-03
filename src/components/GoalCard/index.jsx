@@ -25,7 +25,7 @@ export default function GoalCard({
                         <p className={classNames("caption", styles.dataLabel)}>{caption}</p>
                         <p className="caption">{date}</p>
                     </div>
-                    <Icon size={70} name={icon}/>
+                    <Icon className={styles.icon} size={70} name={icon}/>
                 </div>
                 <div className={styles.text}>
                     <p className="caption">{title}</p>
