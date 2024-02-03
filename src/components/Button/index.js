@@ -35,10 +35,18 @@ function Button({ type="primary", selectable = false, selectText = "", iconOnly=
     const colorStyle = colorStyles[type][selectable ? (sel ? "selected": "unselected") : "noSelect"];
     
     return (
+        iconOnly ?
+            <a tabIndex={0} onKeyDown={(e) => {
+                if(e?.key === "Enter") handleClick();
+            }} onClick={handleClick} {...props} className={classNames(colorStyle, iconOnly ? styles.iconOnly: styles.regular)}>
+                {children}
+            </a>
+        :
+
         <button onClick={handleClick} {...props} className={classNames(colorStyle, iconOnly ? styles.iconOnly: styles.regular)}>
             {selectable ? (sel ? selectText: children):children}
         </button>
-    )
+        )
 }
 
 export default Button;
