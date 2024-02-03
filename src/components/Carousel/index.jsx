@@ -103,8 +103,17 @@ export default function Carousel({ children }) {
   const [width, setWidth] = useState(0);
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  const updateWidth = () => {
+    console.log("Resized");
     setWidth(containerRef.current.scrollWidth - containerRef.current.offsetWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    updateWidth();
+
+    return () => window.removeEventListener('resize', updateWidth);
+
   }, []);
 
 
