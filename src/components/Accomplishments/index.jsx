@@ -21,19 +21,19 @@ export default function Accomplishments() {
                             alt="cafe" 
                             img="/about/accomplishments1.jpg" 
                             title="Wildlife Protection" 
-                            desc="Through our program's dedicated restoration efforts utilizing captive breeding, we have achieved a significant milestone by successfully removing five endangered species from the endangered species list. Our commitment to wildlife restoration and captive breeding programs has played a pivotal role in revitalizing populations that were once on the verge of disappearance. By providing a secure environment for breeding and nurturing these species, we have not only safeguarded their existence but also bolstered their numbers, ensuring a brighter future for biodiversity."
+                            desc="Through dedicated restoration efforts and captive breeding, our program successfully removed five species from the endangered list. Our commitment to wildlife revitalization has safeguarded and increased their populations, ensuring a brighter future for biodiversity."
                         />
                         <Accomplishment 
                             alt="cafe" 
                             img="/about/accomplishments2.jpg" 
                             title="Habitat Conservation" 
-                            desc="Our program's unwavering commitment to conservation has led to the establishment of seven national parks worldwide, an amazing milestone in safeguarding precious ecosystems. Through strong advocacy, we helped establish the preservation of natural habitats and biodiversity hotspots, protecting our Earth’s beautiful landscapes for generations to come. Furthermore, our efforts have resulted in the protection of an astounding 37 million acres of land, serving as sanctuaries for diverse flora and fauna."
+                            desc="Our program's commitment to conservation achieved a milestone with seven global national parks. Through advocacy, we preserved natural habitats, safeguarding 37 million acres for diverse flora and fauna, ensuring a lasting legacy for future generations."
                         />
                         <Accomplishment 
                             alt="cafe" 
                             img="/about/accomplishments3.jpg" 
                             title="Habitat Restoration" 
-                            desc="Thanks to our hard-working volunteers, we have planted tens of thousands of trees and transformed millions of acres of once-barren land into thriving green landscapes. By employing innovative techniques and fostering community engagement, we have breathed new life into ecosystems, mitigating desertification and enhancing biodiversity. Our commitment to reforestation not only beautifies the environment but also provides crucial habitats for wildlife and promotes sustainable land management practices."
+                            desc="Our program achieved a milestone with seven global national parks, preserving natural habitats and biodiversity hotspots. Through advocacy, we protected 37 million acres, creating sanctuaries for diverse flora and fauna, securing Earth's landscapes for future generations."
                         />
                     </motion.div>
                 </div>

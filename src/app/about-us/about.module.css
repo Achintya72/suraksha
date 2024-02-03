@@ -96,13 +96,17 @@
 }
 .allAccs {
     display: flex;
+    align-items: stretch;
+    flex: 1;
 }
 
 .accContent {
-    height: 100vh;
+    height: calc(100vh - 100px);
     position: sticky;
     overflow-x: hidden;
-    top: 60px;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .form {
