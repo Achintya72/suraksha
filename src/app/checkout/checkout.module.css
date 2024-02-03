@@ -23,7 +23,8 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
-    gap: 35px;
+    gap: var(--margin);
+    flex-wrap: wrap-reverse;
 }
 
 .checkoutBg {
@@ -41,6 +42,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
+    min-width: 200px;
 }
 
 
@@ -84,17 +86,22 @@
     background-color: var(--clr-yellow-darkest);
 }
 
+.orderItems {
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+    grid-template-columns: auto 100px 75px;
+}
 
 .orderItem {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
-.orderItems {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.counterP {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .left {
@@ -113,6 +120,45 @@
     color: white;
 }
 
+.navigators {
+    display: flex;
+    gap: 20px;
+}
+
 .basicInfo h6 {
     color: rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 450px) {
+    .tabSelect {
+        flex-direction: column;
+    }
+
+    .currentBg {
+        width: 100%;
+        height: 33%;
+    }
+
+    .left, .center, .right {
+        left: 0 !important;
+    }
+
+    .left {
+        top: 0;
+    }
+    .center {
+        top: 33%;
+    }
+    .right {
+        top: 67%;
+    }
+
+    .nameInfo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .orderItems {
+        grid-template-columns: auto 100px 50px;
+    }
 }

@@ -1,7 +1,8 @@
 .newsCard {
     background-color: white;
     box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
-    min-width: 200px;
+    min-width: 260px;
+    flex: 1
 }
 
 .imageContainer {

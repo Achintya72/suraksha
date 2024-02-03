@@ -1,7 +1,7 @@
 .partners {
     display: flex;
     align-items: stretch;
-    gap: 40px;
+    gap: var(--margin);
     padding-top: 4rem;
     padding-bottom: 5rem;
 }
@@ -32,6 +32,12 @@
 .partnersIcons {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px 35px;
+    gap: var(--margin) var(--margin);
     align-content: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+    .partners {
+        flex-direction: column-reverse;
+    }
 }

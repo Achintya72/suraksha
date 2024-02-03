@@ -16,26 +16,13 @@
 .whatWeDo {
     width: 100%;
     box-sizing: border-box;
-    scroll-snap-align: start;
 }
 
 .whatWeDo h2, .news h2 {
-    margin: 4rem 0rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-.actionCards {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.newsCards {
-    display: flex;
-    gap: 40px;
-    overflow-x: scroll;
-}
 
 .heroText {
     color: white;
@@ -66,7 +53,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
     .heroSection {
         padding: 20px;
     }

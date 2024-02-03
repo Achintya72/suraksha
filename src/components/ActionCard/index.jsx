@@ -7,7 +7,7 @@ import useDarkImage from "@/hooks/darkenImage";
 function ActionCard({ title, icon, number, desc, caption, image, alt="Picture of an animal" }) {
     const darken = useDarkImage();
     return (
-        <div className={styles.card}>
+        <div tabIndex={0} className={styles.card}>
             <Image src={image} style={darken} fill className={styles.bgImg} alt={alt}/>
             <div className={styles.cardContent}>
                 <h3>{title}</h3>

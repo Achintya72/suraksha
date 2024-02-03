@@ -9,9 +9,10 @@ import PartnersPrompt from "@/components/Partners";
 import useDarkImage from "@/hooks/darkenImage";
 import EventCounter from "./_eventCounter";
 import Toast from "@/components/Toast";
+import Carousel from "@/components/Carousel";
 
 export default function Events() {
-    const darken = useDarkImage();
+    const darken = useDarkImage("50%");
 
     return (
         <>
@@ -22,7 +23,7 @@ export default function Events() {
                     <h1>The best way to get involved is to get involved.</h1>
                 </div>
             </section>
-            <section className={classNames("layout", styles.vision)} id="ourVision">
+            <section className={classNames("layout", styles.vision)} id="whyWeDoEvents">
                 <h2>Why We Host Events</h2>
                 <div className="verticalDivider" />
                 <div className={styles.reason}>
@@ -34,7 +35,7 @@ export default function Events() {
                     <p>These events are almost always open to the whole public, and hosted in public spaces. This helps draw attention to our cause, our organization, and helps us grow.</p>
                 </div>
             </section>
-            <section className={styles.galaInfo}>
+            <section className={styles.galaInfo} id="annualGala">
                 <div className={styles.galaPic}>
                     <Image src="/events/gala.jpg" alt="gala" fill />
                 </div>
@@ -46,7 +47,7 @@ export default function Events() {
                         </div>
                         <h2>Annual Suraksha Gala</h2>
                     </div>
-                    <p className="caption">1/10/2023 - 1/17/2024</p>
+                    <p className="caption">5/4/2024 - 5/8/2024</p>
                     <p>Our annual gala is a heartfelt celebration dedicated to honoring the tireless 
                         accomplishments and achievements of Suraksha throughout the past year. It&apos;s 
                         an evening filled with gratitude, where supporters, volunteers, and partners
@@ -59,34 +60,34 @@ export default function Events() {
                     
                 </div>
             </section>
-            <section className={classNames(styles.upcoming, "layout")}>
-                <h2>Upcoming Events</h2>
-                <div className={styles.events}>
+            <section className={classNames(styles.upcoming)} id="upcomingEvents">
+                <h2 className="layout">Upcoming Events</h2>
+                <Carousel>
+                    <Event 
+                        alt="PROTEST"
+                        date="3/7 - 3/10"
+                        desc="Join us in Seattle as we take to the streets to argue for provisions for more national nature reserves."
+                        image="/events/protest.jpg"
+                        location="Seattle, WA"
+                        title="March Animal Rights Protest: Get Involved"
+                    />
+                    <Event 
+                        alt="Myakka River"
+                        date="4/13"
+                        desc="Join us at the Myakka River in Florida as we plant native trees and wildflowers at the headwaters of the river."
+                        image="/events/myakka.jpg"
+                        location="Sarasota, FL"
+                        title="Myakka Reforestation: Tree Planting Event"
+                    />
                     <Event 
                         alt="Gala Event"
-                        date="1/10 - 1/17"
+                        date="5/4 - 5/8"
                         desc="Join us at our annual Surakaha gala event, where we reflect on this year's successes and next year's hopes."
                         image="/events/gala.jpg"
                         location="Albuquerque, NM"
                         title="Annual Suraksha Gala: Registration Information"
                     />
-                    <Event 
-                        alt="PROTEST"
-                        date="11/17 - 11/24"
-                        desc="Join us at Washington D.C., as we take to the streets to argue for provisions for more national nature reserves."
-                        image="/events/protest.jpg"
-                        location="Seattle, WA"
-                        title="March Animal Rights Protest: Get Involved"
-                    />
-                    <Event 
-                        alt="PROTEST"
-                        date="11/17 - 11/24"
-                        desc="Join us at Washington D.C., as we take to the streets to argue for provisions for more national nature reserves."
-                        image="/events/protest.jpg"
-                        location="Seattle, WA"
-                        title="March Animal Rights Protest: Get Involved"
-                    />
-                </div>
+                </Carousel>
             </section>
             <PartnersPrompt />
             <Toast message="Hello!"/>

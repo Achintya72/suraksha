@@ -11,6 +11,7 @@ import Checkbox from "@/components/Checkbox";
 import Button from "@/components/Button";
 import AnimalCard from "@/components/AnimalCard";
 import DonationForm from "@/components/DonationForm";
+import Carousel from "@/components/Carousel";
 
 let tabStyles = [styles.left, styles.right];
 
@@ -40,7 +41,7 @@ export default function Donate() {
                     <h1>Directly support our organization and cause through your donation.</h1>
                 </div>
             </section>
-            <section className={styles.impact} id="ourVision">
+            <section className={styles.impact} id="whyDonate">
                 <div className={classNames("layout", styles.vision)}>
                     <h2>Start Donating</h2>
                     <div className="verticalDivider" />
@@ -61,31 +62,37 @@ export default function Donate() {
 
                 </div>
             </section>
-            <section id="directDonations" className={classNames("layout", styles.directDonations)}>
-                <h2>How to Donate</h2>
-                <h6>Step 1: Choose an Ongoing Program</h6>
-                <div className={styles.programs}>
-                    <ProgramCard
-                        image="/donate/deforestation.jpg"
-                        desc="Lorem ipsum dolor sit amet consectetur. Amet orci volutpat aliquam faucibus orci."
-                        title="Haitian Reforestation Project"
-
-                    />
-                    <ProgramCard
-                        image="/donate/deforestation.jpg"
-                        desc="Lorem ipsum dolor sit amet consectetur. Amet orci volutpat aliquam faucibus orci."
-                        title="Haitian Reforestation Project"
-
-                    />
-                    <ProgramCard
-                        image="/donate/deforestation.jpg"
-                        desc="Lorem ipsum dolor sit amet consectetur. Amet orci volutpat aliquam faucibus orci."
-                        title="Haitian Reforestation Project"
-
-                    />
+            <section id="directDonations" className={classNames(styles.directDonations)}>
+                <div className="layout">
+                    <h2>How to Donate</h2>
+                    <h6>Step 1: Choose an Ongoing Program</h6>
                 </div>
+                <Carousel>
+                    <ProgramCard
+                        image="/donate/deforestation.jpg"
+                        desc="Help restore the beautiful forests of the Haitian landscape."
+                        title="Haitian Reforestation Project"
+                        raised={30000}
+                        target={50000}
+
+                    />
+                    <ProgramCard
+                        image="/donate/congo.jpg"
+                        desc="Help protect the rich forests and the diverse species of the Congo Basin."
+                        title="Congo Basin Conservation"
+                        raised={47000}
+                        target={100000}
+                    />
+                    <ProgramCard
+                        image="/donate/panda.jpg"
+                        desc="Help protect the endangered national treasures of China: the Giant Panda."
+                        title="Sichuan Panda Conservation"
+                        raised={180000}
+                        target={200000}
+                    />
+                </Carousel>
             </section>
-            <section className={styles.differenceContainer}>
+            <section className={styles.differenceContainer} id="donationForm">
                 <div className={styles.background} />
                 <div className={classNames("layout", styles.difference)}>
                     <div className={styles.donate}>
@@ -95,19 +102,19 @@ export default function Donate() {
                     <div className={styles.data}>
                         <h2>The difference you are making</h2>
                         <div className={styles.stats}>
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
+                            <DonationStat desc="Of critical land saved from deforestation." label="acres" value={3760} />
+                            <DonationStat desc="Saved from poachers." label="animals" value={"2k"} />
+                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={"15k"} />
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="adoptAnAnimal" className={classNames("layout", styles.adoptAnAnimal)}>
-                <div className={styles.header}>
+            <section id="adoptAnAnimal" className={classNames(styles.adoptAnAnimal)}>
+                <div className={classNames("layout", styles.header)}>
                     <h2>Adopt An Animal</h2>
                     <p className="caption">Get exclusive monthly updates, a plushie, photos, stamps, and greetings cards of your pet.</p>
                 </div>
-                <div style={{ display: "flex", paddingTop: "32px", paddingBottom: "32px", gap: "35px", overflowX: "auto", overflowY: "visible"}}>
+                <Carousel>
                     <AnimalCard
                         age={16}
                         bio="Loves to eat, sleep, play, repeat."
@@ -136,7 +143,7 @@ export default function Donate() {
                         location="Madhya Pradesh, IN"
                         name="Emily"
                     />
-                </div>
+                </Carousel>
             </section>
         </>
     )

@@ -22,7 +22,7 @@ export default function ProgramCard({ image, alt, title, desc, raised=30000, tar
                 <div className={styles.progressBg}>
                     <div className={styles.progress} style={{ width: `${raised * 100 / target}%`}} />
                 </div>
-                <Button>Select</Button>
+                <Button selectable selectText="Selected" redirect="/donate#donationForm">Select</Button>
             </div>
         </div>
     )

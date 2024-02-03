@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import DonationForm from "@/components/DonationForm";
 import Accomplishment from "@/components/Accomplishment";
 import Accomplishments from "@/components/Accomplishments";
+import Carousel from "@/components/Carousel";
 
 export default function AboutUs() {
     return (
@@ -30,40 +31,40 @@ export default function AboutUs() {
                 </div>
             </section>
             <Accomplishments />
-            <section className={classNames("layout", styles.goals)} id="ourGoals">
-                <h2>Our Goals</h2>
-                <div className={styles.goalCards}>
+            <section className={classNames(styles.goals)} id="ourGoals">
+                <h2 className="layout">Our Goals</h2>
+                <Carousel>
                     <GoalCard
                         alt="Wolf"
                         caption="Avg. Increase"
                         date="By 2030"
                         icon="tiger"
-                        desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
+                        desc="We aim to increase the population of 8 endangered species with the ultimate goal of taking them off the endangered species list."
                         image="/about/wolf.jpg"
                         stat="20%"
                         title="Endangered Species Populations"
                     />
                     <GoalCard
                         alt="Wolf"
-                        caption="Avg. Increase"
+                        caption="New Legislative Acts"
                         date="By 2030"
-                        icon="tiger"
-                        desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
+                        icon="law"
+                        desc="Through advocacy and peaceful protest, we aim to draw more attention from the government to poaching and trafficking."
                         image="/about/courthouse.jpg"
-                        stat="20%"
-                        title="Endangered Species Populations"
+                        stat="4"
+                        title="Protect Endangered Species"
                     />
                     <GoalCard
                         alt="Wolf"
                         caption="Avg. Increase"
                         date="By 2030"
-                        icon="tiger"
-                        desc="Lorem ipsum dolor sit amet consectetur. Tellus mattis nibh rhoncus morbi nec viverra vel sagittis ac."
+                        icon="trees"
+                        desc="Our goal is to increase canopy coverage for major forests in the United States through restoration efforts."
                         image="/about/landscape.jpg"
-                        stat="20%"
-                        title="Endangered Species Populations"
+                        stat="45%"
+                        title="Expanding Canopy Coverage"
                     />
-                </div>
+                </Carousel>
             </section>
             <section className={styles.donate}>
                 <div className={styles.donateBg} />
@@ -73,7 +74,6 @@ export default function AboutUs() {
                         <p>
                             As a non-profit organization, we rely on the support and collaboration of individuals like you to drive meaningful impact. Your contributions, whether through volunteering, donations, or spreading awareness, are crucial in fulfilling our mission of creating positive change for our environment.
                         </p>
-                        <Button>Support Us</Button>
                     </div>
                     <div className="verticalDivider" />
                     <div className={styles.form}>

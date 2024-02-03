@@ -20,20 +20,20 @@ export default function Accomplishments() {
                         <Accomplishment 
                             alt="cafe" 
                             img="/about/accomplishments1.jpg" 
-                            title="Lorem Ipsum" 
-                            desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
+                            title="Wildlife Protection" 
+                            desc="Through dedicated restoration efforts and captive breeding, our program successfully removed five species from the endangered list. Our commitment to wildlife revitalization has safeguarded and increased their populations, ensuring a brighter future for biodiversity."
                         />
                         <Accomplishment 
                             alt="cafe" 
-                            img="/about/accomplishments1.jpg" 
-                            title="Lorem Ipsum" 
-                            desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
+                            img="/about/accomplishments2.jpg" 
+                            title="Habitat Conservation" 
+                            desc="Our program's commitment to conservation achieved a milestone with seven global national parks. Through advocacy, we preserved natural habitats, safeguarding 37 million acres for diverse flora and fauna, ensuring a lasting legacy for future generations."
                         />
                         <Accomplishment 
                             alt="cafe" 
-                            img="/about/accomplishments1.jpg" 
-                            title="Lorem Ipsum" 
-                            desc="Lorem ipsum dolor sit amet consectetur. Velit in viverra ut et feugiat massa sed nunc malesuada. Vehicula mattis tristique praesent nibh sem. Facilisi elementum magna orci mauris consequat malesuada commodo. Sem proin habitasse egestas amet sollicitudin venenatis aenean id. Habitant mattis ornare netus sit. Purus ipsum venenatis id consequat eu sed in molestie. Vulputate eros quam ac."
+                            img="/about/accomplishments3.jpg" 
+                            title="Habitat Restoration" 
+                            desc="Our program achieved a milestone with seven global national parks, preserving natural habitats and biodiversity hotspots. Through advocacy, we protected 37 million acres, creating sanctuaries for diverse flora and fauna, securing Earth's landscapes for future generations."
                         />
                     </motion.div>
                 </div>

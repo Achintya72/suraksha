@@ -1,6 +1,6 @@
 .navLinks {
     display: flex;
-    gap: 40px;
+    gap: var(--margin);
     align-items: center;
 }
 .hide {
@@ -14,12 +14,16 @@
     text-decoration: none;
 }
 
-.navbarContent {
+.navbarContentDesktop {
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 35px;
+    padding: 20px var(--margin);
+}
+
+.navbarContentMobile {
+    display: none;
 }
 
 .navbar {
@@ -36,10 +40,16 @@
     color: black !important;
     box-shadow: 8px 0px 32px 0px rgba(0,0,0,0.25);
 }
-.scrolled .navbarContent {
+.scrolled .navbarContentDesktop {
     color: black !important;
-    padding: 10px 35px;
+    padding: 10px var(--margin);
 }
+
+.scrolled .navbarContentMobile {
+    color: black !important;
+    padding: 10px var(--margin);
+}
+
 
 .navbar * {
     transition: all 300ms ease-out; 
@@ -54,7 +64,7 @@
 .galaText {
     display: flex;
     justify-content: space-between;
-    padding: 10px 35px;
+    padding: 10px var(--margin);
     align-items: center;
 }
 
@@ -70,7 +80,7 @@
     justify-content: center;
     text-align: center;
     font-weight: 700;
-    z-index: 11;
+    z-index: 5;
     border-radius: 9px;
     width: 18px;
     height: 18px;
@@ -80,4 +90,73 @@
     background-color: var(--clr-yellow-medium);
     color: black !important;
 
+}
+
+.aside {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .navbarContentDesktop {
+        display: none;
+    }
+
+    .navbarContentMobile {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px var(--margin);
+    }
+
+    .aside {
+        background-color: white;
+        width: 9rem;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        right: 0;
+        top: 0;
+        box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.25);
+      }
+      
+      .container {
+        position: relative;
+        top: 50px;
+        margin: 4.5rem 1.4rem;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: right;
+      }
+
+      .container div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      
+      .btnContainer {
+        position: fixed;
+        z-index: 12;
+        right: 25px;
+      }
+
+      .btnContainer div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .container a {
+        color: black;
+        text-decoration: none;
+        text-align: right;
+      }
+
+      .toggler {
+        z-index: 12;
+        border: 1px solid red;
+      }
 }
