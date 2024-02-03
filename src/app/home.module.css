@@ -53,7 +53,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
     .heroSection {
         padding: 20px;
     }
