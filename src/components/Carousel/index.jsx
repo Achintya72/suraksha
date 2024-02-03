@@ -104,7 +104,6 @@ export default function Carousel({ children }) {
   const containerRef = useRef(null);
 
   const updateWidth = () => {
-    console.log("Resized");
     setWidth(containerRef.current.scrollWidth - containerRef.current.offsetWidth);
   }
 
