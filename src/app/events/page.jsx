@@ -12,7 +12,7 @@ import Toast from "@/components/Toast";
 import Carousel from "@/components/Carousel";
 
 export default function Events() {
-    const darken = useDarkImage();
+    const darken = useDarkImage("50%");
 
     return (
         <>
