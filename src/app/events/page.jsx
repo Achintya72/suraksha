@@ -64,17 +64,9 @@ export default function Events() {
                 <h2 className="layout">Upcoming Events</h2>
                 <Carousel>
                     <Event 
-                        alt="Gala Event"
-                        date="1/10 - 1/17"
-                        desc="Join us at our annual Surakaha gala event, where we reflect on this year's successes and next year's hopes."
-                        image="/events/gala.jpg"
-                        location="Albuquerque, NM"
-                        title="Annual Suraksha Gala: Registration Information"
-                    />
-                    <Event 
                         alt="PROTEST"
-                        date="11/17 - 11/24"
-                        desc="Join us at Washington D.C., as we take to the streets to argue for provisions for more national nature reserves."
+                        date="3/7 - 3/10"
+                        desc="Join us in Seattle as we take to the streets to argue for provisions for more national nature reserves."
                         image="/events/protest.jpg"
                         location="Seattle, WA"
                         title="March Animal Rights Protest: Get Involved"
@@ -86,6 +78,14 @@ export default function Events() {
                         image="/events/myakka.jpg"
                         location="Sarasota, FL"
                         title="Myakka Reforestation: Tree Planting Event"
+                    />
+                    <Event 
+                        alt="Gala Event"
+                        date="5/4 - 5/8"
+                        desc="Join us at our annual Surakaha gala event, where we reflect on this year's successes and next year's hopes."
+                        image="/events/gala.jpg"
+                        location="Albuquerque, NM"
+                        title="Annual Suraksha Gala: Registration Information"
                     />
                 </Carousel>
             </section>
