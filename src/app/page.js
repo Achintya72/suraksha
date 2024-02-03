@@ -9,6 +9,9 @@ import NewsLetter from "@/components/Newsletter";
 import Carousel from "@/components/Carousel";
 
 export default function Home() {
+
+
+
     return (
         <>
             <section className={styles.heroSection}>
@@ -19,7 +22,7 @@ export default function Home() {
                         <p>
                         Committed to advancing wildlife and habitat conservation and preservation, we work diligently to protect the fragile equilibrium of our natural environments for both current and forthcoming generations. Through engaging projects, active campaigns, and global partnerships, we aim to foster a global environment where biodiversity flourishes and habitats thrive. 
                         </p>
-                        <Button type="secondary">Get Involved</Button>
+                        <Button type="secondary" redirect="/donate">Support Us</Button>
                     </div>
                 </div>
             </section>
