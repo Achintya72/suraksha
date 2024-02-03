@@ -22,7 +22,7 @@ export default function Checkbox({ onChange })  {
     }
 
     return (
-        <a aria-checked={checked} onKeyDown={handleKey} tabIndex={0} className={classNames(styles.checkbox, checked ? styles.checkedRoot: false)} onClick={handleClick}>
+        <a onKeyDown={handleKey} tabIndex={0} className={classNames(styles.checkbox, checked ? styles.checkedRoot: false)} onClick={handleClick}>
             <div className={classNames(styles.bg, checked ? styles.checked: false)} />
             <Icon name="check" size={12} />
         </a>
