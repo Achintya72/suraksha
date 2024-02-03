@@ -102,9 +102,9 @@ export default function Donate() {
                     <div className={styles.data}>
                         <h2>The difference you are making</h2>
                         <div className={styles.stats}>
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
-                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={15} />
+                            <DonationStat desc="Of critical land saved from deforestation." label="acres" value={3760} />
+                            <DonationStat desc="Saved from poachers." label="animals" value={"2k"} />
+                            <DonationStat desc="Planted in core areas to restore canopies." label="trees" value={"15k"} />
                         </div>
                     </div>
                 </div>
